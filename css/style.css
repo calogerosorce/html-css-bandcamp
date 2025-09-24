@@ -105,11 +105,24 @@ body {
     main {
         display: flex;
         height: calc(100% - 112px);
+        padding-top: 10px;
+        background-color: #222222;
+
     }
 
     .left-mn {
         width: 70%;
         overflow-y: auto;
+        border-right: 1px solid #898989;
+
+        strong {
+            font-size: 14px;
+            color: white;
+        }
+
+        .gray {
+            color: #898989;
+        }
 
         .album {
             width: 100%;
@@ -118,6 +131,12 @@ body {
 
             .card {
                 width: calc(100% / 4);
+                padding: 10px;
+
+                img {
+                    width: 100%;
+                    border: 1px solid #898989;
+                }
             }
         }
     }
