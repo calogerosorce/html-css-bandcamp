@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+
+    header {
+        height: 112px;
+    }
+
+    main {
+
+        display: flex;
+    }
+
+    .left-mn {
+        width: 70%;
+        overflow-y: scroll;
+    }
+
+    .right-mn {
+        width: 30%;
+    }
+
+}
+
+.debug {
+    background-color: green;
+
+    header {
+        background-color: antiquewhite;
+    }
+
+    .left-mn,
+    .right-mn {
+        border: 1px dashed;
+    }
+}
