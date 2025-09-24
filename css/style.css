@@ -47,6 +47,10 @@ body {
             display: flex;
             flex-direction: row;
 
+            .mobile {
+                display: none;
+            }
+
             a {
                 padding-right: 10px;
             }
@@ -171,27 +175,46 @@ body {
             flex-direction: column;
             align-items: center;
 
-            .go {
-                background-color: white;
-                color: #222222;
-                padding: 15px 140px;
-                border-radius: 4px;
-            }
 
-            .wi {
-                color: white;
-                border: 1px solid white;
-                padding: 15px 140px;
-                border-radius: 4px;
-                margin-top: 10px;
-            }
+        }
 
+        .go {
+            background-color: white;
+            color: #222222;
+            padding: 15px 120px;
+            border-radius: 4px;
+        }
+
+        .wi {
+            color: white;
+            border: 1px solid white;
+            padding: 15px 120px;
+            border-radius: 4px;
+            margin-top: 10px;
+            margin-bottom: 15px;
         }
 
         .time {
             color: white;
             padding-left: 25px;
-            padding-top: 15px;
+        }
+
+        .follow {
+            display: none;
+
+            .wi {
+                margin-left: 55px;
+            }
+
+            .play {
+                img {
+                    margin: 0;
+                    margin-right: 5px;
+                    width: 20%;
+                    border-radius: 50%;
+                    border: none;
+                }
+            }
         }
     }
 
@@ -200,6 +223,7 @@ body {
 
 @media screen and (max-width: 744px) {
     body {
+
         .left-mn {
             width: 65%;
 
@@ -213,21 +237,40 @@ body {
         .right-mn {
             width: 35%;
 
-            .list {
-                .go {
-                    padding: 10px 50px;
-                }
-
-                .wi {
-                    padding: 10px 50px;
-                }
+            .follow {
+                display: block;
             }
+
+            .go {
+                padding: 10px 50px;
+            }
+
+            .wi {
+                padding: 10px 50px;
+            }
+
         }
     }
 }
 
 @media screen and (max-width: 600px) {
     body {
+        header {
+            .left-hd {
+                .dekstop {
+                    display: none;
+                }
+
+                .mobile {
+                    display: block;
+                }
+
+                search {
+                    display: none;
+                }
+            }
+        }
+
         .left-mn {
             width: 100%;
 
