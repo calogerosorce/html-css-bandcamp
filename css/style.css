@@ -175,6 +175,12 @@ body {
     .right-mn {
         width: 30%;
 
+        overflow-y: auto;
+
+        audio {
+            margin-left: 25px;
+        }
+
         img {
             width: 90%;
             margin: 25px;
