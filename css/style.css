@@ -125,6 +125,8 @@ body {
         overflow-y: auto;
         border-right: 1px solid #898989;
         padding: 15px;
+        scrollbar-width: thin;
+        scrollbar-color: #898989 #222222;
 
         .card:hover i {
             display: block;
@@ -174,8 +176,9 @@ body {
 
     .right-mn {
         width: 30%;
-
         overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #898989 #222222;
 
         audio {
             margin-left: 25px;
