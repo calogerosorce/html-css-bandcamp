@@ -29,13 +29,14 @@
 }
 
 a {
-
     text-decoration: none;
 
     &:hover {
-        text-decoration: solid;
+        text-decoration: underline;
     }
 }
+
+
 
 body {
     height: 100vh;
@@ -125,12 +126,17 @@ body {
         border-right: 1px solid #898989;
         padding: 15px;
 
+        .card:hover i {
+            display: block;
+        }
+
         i {
             display: none;
-            position: relative;
-            right: -250px;
-            top: -30px;
-            color: #898989;
+            position: absolute;
+            font-size: 20px;
+            right: 20px;
+            top: 250px;
+            color: #312e2e;
         }
 
         strong {
@@ -150,13 +156,13 @@ body {
             .card {
                 width: calc(100% / 4);
                 padding: 10px;
+                position: relative;
 
 
 
                 img {
                     width: 100%;
                     border: 1px solid #898989;
-                    position: relative;
 
                     &:hover {
                         border: none;
@@ -188,6 +194,10 @@ body {
                 color: white;
                 font-size: 60px;
 
+                &:hover {
+                    color: #898989;
+                }
+
             }
         }
 
@@ -204,6 +214,10 @@ body {
             color: #222222;
             padding: 15px 120px;
             border-radius: 4px;
+
+            &:hover {
+                background-color: #898989;
+            }
         }
 
         .wi {
@@ -213,6 +227,10 @@ body {
             border-radius: 4px;
             margin-top: 10px;
             margin-bottom: 15px;
+
+            &:hover {
+                background-color: #3c3c3c;
+            }
         }
 
         .time {
@@ -252,7 +270,7 @@ body {
 
             .album {
                 .card {
-                    width: calc(100% / 3);
+                    width: calc(100% / 2);
                 }
             }
         }
@@ -300,12 +318,49 @@ body {
             .album {
                 .card {
                     width: calc(100% / 2);
+
+                    i {
+                        top: 75px;
+                    }
                 }
             }
         }
 
         .right-mn {
             display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    body {
+
+        .left-mn {
+            width: 65%;
+
+            .album {
+                .card {
+                    width: calc(100% / 3);
+                }
+            }
+        }
+
+        .right-mn {
+            width: 35%;
+
+            .follow {
+                display: block;
+            }
+
+            .go {
+                padding: 10px 50px;
+            }
+
+            .wi {
+                padding: 10px 50px;
+            }
+
         }
     }
 }
