@@ -137,7 +137,7 @@ body {
             position: absolute;
             font-size: 20px;
             right: 20px;
-            top: 90px;
+            top: 250px;
             color: #312e2e;
         }
 
@@ -276,6 +276,10 @@ body {
         .left-mn {
             width: 65%;
 
+            i {
+                top: 120px;
+            }
+
             .album {
                 .card {
                     width: calc(100% / 3);
@@ -306,30 +310,16 @@ body {
     body {
 
         .left-mn {
-            width: 65%;
+
+            i {
+                top: 150px;
+            }
 
             .album {
                 .card {
                     width: calc(100% / 2);
                 }
             }
-        }
-
-        .right-mn {
-            width: 35%;
-
-            .follow {
-                display: block;
-            }
-
-            .go {
-                padding: 10px 50px;
-            }
-
-            .wi {
-                padding: 10px 50px;
-            }
-
         }
     }
 }
